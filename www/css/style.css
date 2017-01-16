@@ -1,0 +1,578 @@
+/*共通設定*/
+    *{
+      font-family: "ヒラギノ角ゴ Pro";
+      margin: 0px;
+      padding: 0px;
+    }
+
+
+/*index.html*/
+
+    /*bodyの基本設定*/
+    
+        body{
+            margin-right: auto;
+            margin-left: auto;
+            background-color: rgb(254,254,254);
+        }
+    
+    
+    /*ロゴタイプ*/
+    
+        .logo{
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
+            height: 85%;
+        }
+    
+    
+    /*グローバルメニュー*/
+    
+        .slider{
+            padding: 0px;
+            width: 92%;
+            height: 92%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
+        
+        .sum{
+            width: 92%;
+            height: 280px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: auto;
+        }
+        
+            .nobr{
+                margin-top: 500px;
+            }
+        
+        
+        
+        
+    /*広告*/
+    
+        /*画像*/
+            .banner{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+                margin-bottom: 100px;
+                text-align: center;
+            }
+        
+        /*ドロップダウン*/
+            label {
+                font-size: 23pt;
+                color: black;
+                margin-left: 32%;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid gray;
+                /*display: block;*/
+                }
+            
+            /*チェックボックスの表示/非表示*/
+            input[type="checkbox"].on-off{
+                display: none;
+            }
+    
+            /*アニメーション*/
+            .menu ul {
+                -webkit-transition: all 2s;
+                -moz-transition: all 2s;
+                -ms-transition: all 2s;
+                -o-transition: all 2s;
+                transition: all 2s;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            
+            /*メニュー内の余白(横)*/
+            .menu li {
+                text-align: center;
+                padding: 50px;
+            }
+            
+            /*要素の表示/非表示*/
+            input[type="checkbox"].on-off + ul{
+                height: 0;
+                overflow: hidden;
+            }
+            
+            /*メニュー内の高さ*/
+            input[type="checkbox"].on-off:checked + ul{
+                height: 2200px;
+            }
+            
+            
+        
+        
+        
+        
+        
+    /*ページリンク*/
+        .link{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 80px;
+            padding: 0px;
+            height: 100%;
+            box-shadow: 2px 2px 2px 2px rgba(70,70,70,0.05);
+            background-color: rgb(253,253,253);
+        }
+        
+        
+    
+    
+    
+    /*今週の特集*/
+    
+        .tokusyu{
+            position: relative;
+            margin-top: 50px;
+            margin-left: 30px;
+            font-size: 28pt;
+        }
+        
+        .tokusyu_img{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 15px;
+        }
+        
+        .tokusyu_midashi{
+            margin-left: 10px;
+            margin-top: 80px;
+            font-size: 23pt;
+        }
+        
+        .tokusyu_text{
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+    
+    
+    /*トピックス*/
+        .topicks{
+            margin-left: 25px;
+            padding-top: 200px;
+            font-size: 28pt;
+        }
+        
+        .topicks_img{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .topicks_midashi{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 80px;
+            font-size: 23pt;
+        }
+        
+        .topicks_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+    
+    
+    /*スポーツ*/
+        .sports{
+            margin-left: 25px;
+            padding-top: 100px;
+            font-size: 28pt;
+        }
+        
+        .sports_img{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .sports_midashi{
+            margin-left: 25px;
+            margin-right: 10%;
+            margin-top: 35px;
+            font-size: 23pt;
+        }
+        
+        .sports_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+        
+        
+    /*グルメ*/
+        .gourmet{
+            margin-left: 25px;
+            padding-top: 100px;
+            font-size: 28pt;
+        }
+        
+        .gourmet_img{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 15px;
+        }
+        
+        .gourmet_midashi{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 35px;
+            font-size: 23pt;
+        }
+        
+        .gourmet_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+        
+        
+    /*キッズ*/
+        .kids{
+            margin-left: 25px;
+            padding-top: 100px;
+            font-size: 28pt;
+        }
+        
+        .kids_img{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .kids_midashi{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 35px;
+            font-size: 23pt;
+        }
+        
+        .kids_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+        
+        
+    /*区切り*/
+        .kugiri{
+            margin-top: 100px;
+            margin-left: 25px;
+            font-size: 35pt;
+        }
+        
+        
+        
+    /*スイートタイム*/
+        .sweet_time{
+            margin-left: 25px;
+            padding-top: 200px;
+            font-size: 28pt;
+        }
+        
+        .sweet_time_img{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 15px;
+        }
+        
+        .sweet_time_midashi{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 35px;
+            font-size: 23pt;
+        }
+        
+        .sweet_time_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+        
+        
+    /*クチコミ*/
+        .kuchikomi{
+            margin-left: 25px;
+            padding-top: 100px;
+            font-size: 28pt;
+        }
+        
+        .kuchikomi_img{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 15px;
+        }
+        
+        .kuchikomi_midashi{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 35px;
+            font-size: 23pt;
+        }
+        
+        .kuchikomi_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+        
+        
+    /*星座占い*/
+        .seiza{
+            margin-left: 25px;
+            padding-top: 100px;
+            font-size: 28pt;
+        }
+        
+        .seiza_img{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 15px;
+        }
+        
+        .seiza_midashi{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 35px;
+            font-size: 23pt;
+        }
+        
+        .seiza_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+        
+        
+    /*酔粋駅近*/
+        .ekichika{
+            margin-left: 25px;
+            padding-top: 100px;
+            font-size: 38pt;
+        }
+        
+        .ekichika_img{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .ekichika_midashi{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 35px;
+            font-size: 23pt;
+        }
+        
+        .ekichika_text{
+            margin-left: 25px;
+            margin-right: 5.5%;
+            line-height: 55px;
+            font-size: 23pt;
+        }
+        
+        
+        
+    /*フッター*/
+        .footer{
+            width: 100%;
+            height: 250px;
+            margin-top: 50%;
+            padding-bottom: 0px;
+            background-color: #f3ccff;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+/*tokusyu.html*/
+
+    /*header*/
+    
+        .header_box{
+            width: 100%;
+            height: 130px;
+            margin: 0px;
+            padding: 0px;
+            position: fixed;
+            z-index: 1;
+            background-color: white;
+            box-shadow: 2px 2px 2px 2px rgb(230,230,230);
+        }
+        
+        .back{
+            float: left;
+            margin-top: 45px;
+            margin-left: 60px;
+        }
+        
+        .header{
+            margin-top: 35px;
+            margin-left: 130px;
+            float: left;
+        }
+        
+        
+    /*body*/
+    
+    
+    
+        .tokusyu_box{
+            position: absolute;
+            top: 130px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        
+        .tokusyu_kiji1{
+            font-size: 40pt;
+            font-family: "游教科書体";
+            margin-left: 130px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        .tokusyu_img1{
+            text-align: center;
+        }
+        
+        .tokusyu_kiji2{
+            font-family: "ヒラギノ角ゴ Pro";
+            font-size: 23pt;
+            margin-left: 40px;
+            margin-right: 35px;
+            margin-top: 100px;
+        }
+        
+        .tokusyu_kiji3{
+            font-family: "ヒラギノ角ゴ Pro";
+            font-size: 28pt;
+            margin-left: 35px;
+            margin-top: 200px;
+        }
+        
+        .kiji4_box{
+            width: 300px;
+            height: 800px;
+            float: left;
+            overflow: auto;
+            border: 2px solid rgb(230,230,230);
+            margin-left: 35px;
+            margin-right: 50px;
+            margin-top: 80px;
+        }
+        
+            .tokusyu_kiji4{
+                font-family: "ヒラギノ角ゴ Pro";
+                font-size: 23pt;
+            }
+            
+        .tokusyu_img2{
+            margin-top: 90px;
+            padding: 0px;
+        }
+        
+        .tokusyu_img3{
+            margin-top: 100px;
+        }
+        
+        .tokusyu_kiji5{
+            font-family: "ヒラギノ角ゴ Pro";
+            font-size: 28pt;
+            margin-left: 35px;
+            padding-top: 130px;
+            clear: both;
+        }
+        
+        .kiji6_box{
+            width: 300px;
+            height: 500px;
+            float: left;
+            overflow: auto;
+            border: 2px solid rgb(230,230,230);
+            margin-left: 35px;
+            margin-right: 50px;
+            margin-top: 85px;
+        }
+        
+            .tokusyu_kiji6{
+                font-family: "ヒラギノ角ゴ Pro";
+                font-size: 23pt;
+            }
+            
+        .tokusyu_img4{
+            margin-top: 80px;
+        }
+        
+        .tokusyu_kiji7{
+            font-family: "ヒラギノ角ゴ Pro";
+            font-size: 28pt;
+            margin-left: 35px;
+            padding-top: 100px;
+            clear: both;
+        }
+            
+        .tour_table{
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        
+        
+
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+    
+
+
+
+
+
+
